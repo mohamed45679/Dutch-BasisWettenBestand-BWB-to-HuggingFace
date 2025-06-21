@@ -19,7 +19,7 @@ jobs:
           python scripts/crawler.py \
             --sru_url "$SRU_URL" \
             --cql_query "$CQL_QUERY" \
-            --since_file last_crawl.json \
+            
             --out_dir data/ \
             --batch_size 100
       - name: Update Hugging Face dataset
